@@ -1,0 +1,125 @@
+
+body{
+    background-color: rgb(207, 234, 241);
+    background-size: auto;
+}
+*{
+    box-sizing: border-box;
+    
+}
+h1{
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+text-align: center;
+font-style: oblique;
+text-transform: uppercase;
+font-style: italic;
+color: rgb(0, 0, 0);
+}
+div#keep{
+    position: relative;
+    top: 25px;
+    width: 100%;
+    
+}
+div.rows {
+width: 32%;
+position: relative;
+border: 1px solid black;
+float: left;
+margin-right: 15px;
+padding:  10px;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+background-color: rgb(203, 204, 117);
+}
+
+div.name{
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: -.2rem;
+    right: -.2rem;
+    padding: .2rem 2.5rem;
+    background-color: #6d2497;
+    border: .1px solid black;
+
+    
+}
+/* Desktop Styles */
+
+@media (min-width: 992px) {
+    div#keep {
+        width: 97%;
+        margin: auto;
+    }
+    div.rows {
+        
+        width: 30%;
+        padding: 5rem 1.5rem;
+        margin-right: 2%;
+        float: left;
+        border: .1rem solid black;
+    }
+    section:last-child {
+        margin-right: 0;
+    }
+}
+
+
+/* Tablet Styles */
+
+@media (min-width: 768px) and (max-width: 991px) {
+    div#keep {
+        width: 95%;
+        margin: auto;
+    }
+    div.rows:first-child {
+       
+        width: 45.75%;
+        padding: 4.7rem 1.5rem;
+        margin-right: 2.5%;
+        float: left;
+        border: .1rem solid black;
+    }
+    div.rows:nth-child(2) {
+        
+        width: 45.75%;
+        padding: 4.7rem 1.5rem;
+        float: left;
+        border: .1rem solid black;
+    }
+    div.rows:last-child {
+        height: 15rem;
+        width: 100%;
+        top: 15px;
+        padding: 4.7rem 1.5rem;
+        float: left;
+        border: .1rem solid black;
+    }
+}
+
+
+/* Mobile Devices' Styles */
+
+@media (max-width: 767px) {
+    div#keep {
+        width: 90%;
+        margin: auto;
+    }
+    div.rows {
+       
+        width: 100%;
+        padding: 4rem 1.5rem;
+        float: left;
+        
+        border: .1rem solid black;
+    }
+   
+    div.rows:nth-child(2) {
+        
+       top: 40px;
+    }
+    div.rows:last-child {
+        top: 80px;
+    }
+
+}
